@@ -1,0 +1,66 @@
+//
+// Colors
+// Find a color name:
+// http://chir.ag/projects/name-that-color/#6195ED
+// --------------------------------------------------
+
+// Main Colors
+$color-black-solid: #000000;
+$color-white-paper-white: #ffffff;
+$color-drawer-background: #000000;
+$color-sation-background: #ffffff;
+$color-navigation-background: #a62b0f;
+$color-navigation-button-color: #d55b5d;
+$color-content-background: #d55b5d;
+$color-content-background--info: #f5f5f5;
+
+// Font Colors
+$color-font-black: #000000;
+$color-font-white: #ffffff;
+$color-font-default: rgba(114, 114, 114, 1);
+$color-font-info: rgba(245, 245, 245, 1);
+$color-font-info--opacity: rgba(245, 245, 245, .6);
+$color-font-title: #f6e5de;
+$color-font-content: #e1a38c;
+$color-font-content-link: #e1a38c;
+$color-font-content-link--hover: #e1a38c;
+$color-font-navigation: #f3e3de;
+$color-font-image-placeholder: #f6e5de;
+$color-font-grey--dark: #5c5c5c;
+$color-font-green: #417505;
+$color-font-blue--light: #099ee6;
+
+// Drum Colors
+$color-sample: #b3b3b3;
+$color-sample_1: #b3b3b3;
+$color-sample_2: #737373;
+$color-sample_3: #424040;
+$color-sample_4: #292727;
+$color-sample-selected: #FB0D1B;
+
+// ------------------- // 
+$color-navigation-background: #ffffff;
+$color-main: #000000;
+$color-main--light: rgba(0, 0, 0, .6);
+$color-highlight: rgba(67, 67, 67, 1);//#434343;
+$color-highlight--light: rgba(67, 67, 67, .6);
+$color-range-slider--background: #d3d3d3;//rgba(67, 67, 67, 0.2);
+$color-user-icon: #eaeaea;
+$color-accent: #2d2d2d;
+$color-accent--light: rgba(15, 189, 214, .6);
+$color-accent--row: rgba(15, 189, 214, .24);
+$color-light: #ffffff;
+$color-light-90: rgba(255, 255, 255, 0.9);
+$color-light-65: rgba(255, 255, 255, 0.65);
+$color-inactive: rgba(0, 0, 0, 0.1);
+$color-inactive-two: rgba(0, 0, 0, 1);
+$color-social-accent: #0aa1b7;
+$color-error: #fb6145;
+$color-navigation-text: rgba(114, 114, 114, 1); //#727272;
+$color-navigation-text--light: rgba(114, 114, 114, 0.6);
+$color-menu: #f7f7f7;
+$color-border-footer: #f7f7f7;
+$color-slider-background--active: rgba(15, 189, 214, 0.01);
+$color-reset-link: rgba(0, 189, 216, 1);//#00bdd8;
+$color-reset-link--light: rgba(0, 189, 216, 0.4);
+$color-modal-drag: rgb(154, 154, 154);

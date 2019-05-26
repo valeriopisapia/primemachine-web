@@ -1,0 +1,60 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700);
+
+// -----------------------------------------------------------------------------
+
+@mixin fontFamily($family: 'Roboto Condensed', $weight: 300, $style: 'normal') {
+  font-family: $family, sans-serif;
+  font-weight: $weight; // 300, 400, 700
+  font-style: normal; // normal, italic
+}
+
+// -----------------------------------------------------------------------------
+
+@mixin multiline($font-size:30px, $line-height: 1.1, $lines-to-show: 3) {
+  display: block; /* Fallback for non-webkit */
+  display: -webkit-box;
+  max-width: 250px;
+  max-height: $font-size * $line-height * $lines-to-show; /* Fallback for non-webkit */
+  margin: 0 auto;
+  font-size: $font-size;
+  line-height: $line-height;
+  -webkit-line-clamp: $lines-to-show;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// -----------------------------------------------------------------------------
+
+@mixin truncate($width: 100px) {
+  width: $width;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// -----------------------------------------------------------------------------
+
+@mixin opacity ($value: 1) {
+  
+}
+
+// -----------------------------------------------------------------------------
+
+// @mixin dynamicSize($size: 0) {
+//
+// }
+
+// -----------------------------------------------------------------------------
+
+//@mixin fontIcon() {
+//  @font-face {
+//    font-family: 'icomoon';
+//    src:
+//      url('fonts/icomoon.ttf?br07ar') format('truetype'),
+//      url('fonts/icomoon.woff?br07ar') format('woff'),
+//      url('fonts/icomoon.svg?br07ar#icomoon') format('svg');
+//    font-weight: normal;
+//    font-style: normal;
+//  }
+//}

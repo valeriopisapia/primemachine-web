@@ -1,0 +1,25 @@
+@mixin shape($width, $height, $radius:0) {
+  width: $width;
+  height: $height;
+  border-radius: $radius;
+}
+
+@mixin centerAll() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin centerReset() {
+  display: inherit;
+  justify-content: initial;
+  align-items: initial;
+}
+
+@mixin highlight {
+  font-family: 'Cabin', sans-serif;
+  font-size: sp(14);
+  line-height: 1.29;
+  text-align: left;
+  color: $color-highlight;
+}

@@ -1,0 +1,32 @@
+.sw-modal {
+    &__card {
+        &--title {
+            background-color: $color-accent;
+            font-size: sp(24);
+            color: $color-font-white;
+        }
+
+        &--text {
+            margin-top: sp(30);
+            font-size: sp(13);
+            color: $color-font-grey--dark;
+        }
+
+        &--citation {
+            margin-bottom: sp(30);
+            font-size: sp(13);
+            color: $color-font-grey--dark;
+        }
+
+        &--actions {
+            padding: 0 sp(20) sp(20) 0;
+        }
+    }
+}
+
+
+// HEADS UP: overwrite the default styles of vuetify
+
+.v-dialog {
+    width: sp(750)
+}

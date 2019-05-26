@@ -1,0 +1,35 @@
+.sw-search {
+
+  &__form {
+    background: $color-content-background--info;
+    margin: -15px !important;
+
+  }
+
+  &__container {
+    background-color: $color-content-background--info;
+  }
+
+  &__input {
+    max-width: calc(66.66666666666666% - 15px) !important;
+  }
+
+  &__subheader {
+
+    // &--container {
+
+    // }
+
+    &--text {
+      font-size: sp(20);
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: sp(-0.2);
+      color: $color-font-grey--dark;
+      padding-bottom: sp(16);
+      height: sp(79);
+    }
+  }
+}

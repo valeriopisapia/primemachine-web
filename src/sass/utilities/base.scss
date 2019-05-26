@@ -1,0 +1,11 @@
+//
+// Base Font Size Settings
+// --------------------------------------------------
+$base-font-size--unitless: 14;
+$base-unit: px;
+
+// Base Font Size
+$base-font-size: $base-font-size--unitless * 1#{$base-unit};
+
+// Line-Height
+$base-line-height: 1.5;

@@ -1,0 +1,298 @@
+// global styles!
+[v-cloak] {
+  display: none;
+}
+
+body {
+  background-color: black;
+}
+
+// remember to define focus styles!
+*:focus,
+button:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+.v-card {
+  box-shadow: none;
+}
+
+// standwood CMS global styles
+
+
+.sw-main {
+
+  &__container {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: calc(100vh - 65px);
+  }
+}
+
+.sw-toolbar {
+
+  &__container {
+    background-color: $color-accent;
+  }
+}
+
+.sw-navigation {
+
+  &__drawer {
+    background-color: $color-drawer-background;
+  }
+}
+
+.sw-list {
+
+  &__tile {
+
+    &--title {
+      opacity: 0.55;
+      font-size: sp(14);
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: sp(-0.1);
+      color: $color-font-white;
+      text-transform: uppercase;
+    }
+
+    &--item {
+      font-size: sp(14);
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: sp(-0.1);
+      color: $color-font-white;
+    }
+  }
+}
+
+.sw-card {
+
+  &__container {
+    min-height: 100vh;
+
+    &--no-scroll {
+      overflow: hidden;
+      width: 100%;
+      min-height: calc(100vh - 65px);
+    }
+
+    &:last-of-type {
+      padding-right: 0;
+      margin-right: 0;
+      box-shadow: none;
+    }
+  }
+
+  &__item {
+
+    &--fixed {
+      position: fixed;
+      z-index: $zindex-1;
+
+      background-color: $color-content-background--info;
+      width: 26%;
+      padding-bottom: 0;
+    }
+
+    &--scroll {
+      position: relative;
+      top: sp(140);
+      z-index: $zindex-0;
+      padding: 0;
+    }
+
+    &--header {
+      position: relative;
+      top: 0;
+      z-index: $zindex-0;
+      padding: 0 0 sp(16) 0;
+      background-color: $color-content-background--info;
+    }
+
+    &--title {
+      font-size: sp(20);
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: sp(-0.2);
+      color: $color-font-grey--dark;
+      margin-left: sp(24);
+      margin-top: sp(16);
+    }
+
+    &--search {
+      padding-left: sp(30);
+      padding-right: sp(24);
+    }
+
+    &--datatables {
+      padding: 0;
+    }
+  }
+
+  &__listing {
+
+    &--header {
+      padding: 0;
+      margin: 0;
+      padding-top: sp(21);
+      margin-bottom: sp(-10);
+    }
+
+    &--left {
+      width: 49%;
+      display: inline-block;
+
+      opacity: 0.87;
+      font-size: sp(12);
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: sp(-0.1);
+      color: $color-font-black;
+    }
+
+    &--right {
+      width: 49%;
+      display: inline-block;
+      padding-right: sp(40);
+      text-align: right;
+
+      opacity: 0.54;
+      font-size: sp(12);
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: sp(-0.1);
+      color: $color-font-black;
+    }
+  }
+}
+
+.sw-divider {
+  margin-left: sp(-15);
+  // margin-top: sp(15);
+  width: calc(100% + 32px);
+  // background-color: $color-content-background--info;
+}
+
+.sw-no {
+
+  &__padding {
+    padding: 0;
+  }
+
+  &__margin {
+    margin: 0;
+  }
+}
+
+.sw-column {
+  padding-right: sp(2);
+  box-shadow: 0 sp(1) sp(5) 0 rgba(0, 0, 0, 0.2), 0 sp(3) sp(4) 0 rgba(0, 0, 0, 0.12), 0 sp(2) sp(4) 0 rgba(0, 0, 0, 0.14);
+}
+
+.sw-bottom-btn {
+  transform-origin: center center 0; 
+  bottom: sp(5);
+  right: sp(5);
+  width: sp(30);
+  height: sp(30);
+  border-radius: 0;
+  background-color: transparent;
+  top: sp(10);
+  z-index: 1000 !important;
+}
+
+// HEADS UP: overwrite the default styles of vuetify
+
+.container.fluid {
+  overflow-x: auto;
+}
+.application.theme--dark {
+  background-color: $color-black-solid !important;
+}
+
+.application .theme--dark.v-toolbar,
+.theme--dark .v-toolbar {
+  @extend .sw-toolbar__container;
+  z-index: $zindex-2;
+}
+
+.application .theme--dark.v-navigation-drawer,
+.theme--dark .v-navigation-drawer {
+  @extend .sw-navigation__drawer;
+}
+
+.v-list__group__items--no-action .v-list__tile {
+  padding-left: sp(15);
+}
+
+.application .theme--dark.v-navigation-drawer .v-divider, .application .theme--dark.v-navigation-drawer:not(.v-navigation-drawer--floating) .v-navigation-drawer__border, .theme--dark .v-navigation-drawer .v-divider, .theme--dark .v-navigation-drawer:not(.v-navigation-drawer--floating) .v-navigation-drawer__border {
+  background-color: transparent;
+}
+
+// ADD TO HOMESCREEN POPUP
+#popup {
+	position: absolute;
+	top: sp(20);
+	right: 8%;
+	width: sp(208);
+	height: sp(80);
+	padding: sp(10);
+	background-color: $color-sample_2;
+  border: sp(2) solid $color-sample_3;
+  border-radius: sp(5);
+	z-index: 9999;
+	text-align: center;
+
+  h4 {
+    color: white;
+    font-size: sp(15);
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  p {
+    color: white;
+    font-size: sp(11);
+    font-weight: bold;
+
+  }
+  
+  &::after {
+    position: absolute;
+    content: '';
+    height: 0;
+    width: 0;
+    left: 43%;
+    top: sp(-20);
+    border-left: sp(20) solid transparent;
+    border-right: sp(20) solid transparent;
+    border-bottom: sp(20) solid $color-sample_2;
+    z-index: 9999;
+  }
+}
+
+.popup-close-icon {
+	position: absolute;
+	width: 0;
+	right: sp(20);
+	top: 0;
+	font-size: sp(24);
+  font-weight: bolder;
+	color: white;
+	cursor: pointer;
+}

@@ -1,0 +1,20 @@
+/*
+* === Horizontal padding ===
+*/
+
+@mixin hPadding() {
+  // code here
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@mixin iconPaddingRight() {
+  [class^="bi-icon-"], [class*=" bi-icon-"] {
+    padding-right: 3px;
+  }
+}
+
+@mixin gutter($left:0, $right:0) {
+  padding-right: $left;
+  padding-left: $right;
+}

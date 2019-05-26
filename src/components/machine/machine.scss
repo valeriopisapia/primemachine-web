@@ -1,0 +1,715 @@
+.drum-machine * {
+  margin-top: 0;
+}
+
+/* basic buttons */
+
+button {
+  background: #222;
+  border: 0;
+  border-radius: 50%;
+}
+
+button:disabled {
+  opacity: 0.3;
+}
+
+a:focus,
+button:focus,
+.track-beats [type='checkbox']:focus + label,
+.checkbox-group [type='checkbox']:focus + label::before,
+[type='text']:focus,
+[type='number']:focus {
+  outline: none;
+}
+
+button svg {
+  width: 100%;
+  height: 100%;
+}
+
+.track-main button {
+  background: transparent;
+}
+
+[aria-label='mute'][aria-pressed='true'] .waves {
+  display: none;
+}
+
+/* main layout */
+
+.central-col {
+  margin: 2.25rem auto;
+  max-width: 45rem;
+  padding: 0 1.5rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.75rem;
+  margin-right: 1rem;
+}
+
+header {
+  background: #222;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: #fff;
+  padding: 0.5rem 1rem;
+}
+
+header p {
+  margin-top: 0;
+}
+
+/* range inputs */
+
+input[type='range'] {
+  -webkit-appearance: none;
+  width: 100%;
+  background: transparent;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type='range']:focus {
+  background: transparent;
+}
+
+input[type='range']::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  box-shadow: 0 0 0 0.2rem #fefefe; 
+  height: 1.75rem;
+  width: 1.75rem;
+  border-radius: 1rem;
+  background: #222 url(./assets/images/grip.svg) no-repeat center;
+  background-size: 0.66rem auto;
+  cursor: pointer;
+  margin-top: -0.75rem;
+}
+
+input[type='range']:focus::-webkit-slider-thumb {
+  outline: none;
+}
+
+input[type='range']::-moz-range-thumb {
+  border: none;
+  height: 1.75rem;
+  width: 1.75rem;
+  border-radius: 0.25rem;
+  background: #222 url(./assets/images/grip.svg) no-repeat center;
+  background-size: 0.66rem auto;
+  cursor: pointer;
+}
+
+input[type='range']:focus::-moz-range-thumb {
+  outline: none;
+  /* box-shadow: 0 0 0 0.25rem #f0f;*/
+}
+
+input[type='range']::-ms-thumb {
+  border: none;
+  height: 1.75rem;
+  width: 1.75rem;
+  border-radius: 0.25rem;
+  background: #222 url(./assets/images/grip.svg) no-repeat center;
+  background-size: 0.66rem auto;
+  cursor: pointer;
+}
+
+input[type='range']:focus {
+  outline: none;
+}
+
+input[type='range']:focus::-ms-thumb {
+  outline: none;
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 0.33rem;
+  cursor: pointer;
+  background-color: #222;
+  border-radius: 0.25rem;
+  border: none;
+}
+
+input[type='range']::-moz-range-track {
+  width: 100%;
+  height: 0.33rem;
+  cursor: pointer;
+  background: #222;
+  border-radius: 0.25rem;
+  border: none;
+}
+
+input[type='range']:focus::-moz-range-track {
+  outline: none;
+}
+
+input[type='range']::-ms-track {
+  width: 100%;
+  height: 0.33rem;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  border-width: 0;
+  color: transparent;
+}
+
+input[type='range']::-ms-fill-lower {
+  background: #222;
+  border: none;
+  border-radius: 0;
+}
+
+input[type='range']::-ms-fill-upper {
+  background: #222;
+  border: none;
+  border-radius: 0;
+}
+
+input[type='range']:focus::-ms-fill-upper {
+  background: #222;
+}
+
+/* forms */
+
+fieldset {
+  border: 0;
+}
+
+[type='number'] {
+  display: inline;
+  width: 3rem;
+  text-align: center;
+  padding: 0.25rem;
+  border: 0.25rem solid;
+  border-radius: 0.25rem;
+  line-height: 1;
+}
+
+/* utilities */
+
+.vh,
+legend:not(.show),
+[type='checkbox'] {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+[hidden] {
+  display: none;
+}
+
+.between {
+  padding: 0 0.5rem;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.checkbox-group label {
+  margin-right: 1rem;
+}
+
+.checkbox-group label::before {
+  content: '';
+  display: inline-block;
+  width: 1.33rem;
+  height: 1.33rem;
+  margin-right: 0.25rem;
+  border: 0.25rem solid #222;
+  border-radius: 0.25rem;
+  vertical-align: -0.33rem;
+  background-color: #fff;
+}
+
+.checkbox-group [type='checkbox']:checked + label::before {
+  background-image: url(./assets/images/tick.svg);
+  background-position: center;
+  background-size: 100% auto;
+}
+
+/* main track */
+
+.track {
+  margin-top: 2rem;
+}
+
+.track-main,
+.track-beats {
+  display: flex;
+}
+
+.track-main {
+  justify-content: space-between;
+  padding-bottom: 5px;
+}
+
+.track-beats {
+  width: calc(100% - 6.5rem);
+  margin: 0 0.25rem 0 0.75rem;
+  position: relative;
+}
+
+.track-label {
+  position: absolute;
+  left: -5rem;
+  top: -1.8rem;
+  font-size: 15px;
+}
+
+.track-label::before {
+  content: '';
+  display: inline-block;
+  width: 0.25rem;
+  height: 1.25rem;
+  position: absolute;
+  top: 1.33rem;
+  left: 0.5rem;
+  background: #222;
+  display: none;
+}
+
+.track-main button {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 0;
+  margin-left: 0.5rem;
+}
+
+.track-beats .track-beats-black label {
+  background-color: black !important;
+  background-image: none !important;
+}
+
+.track-beats .track-beats-others label {
+  background-image: -webkit-linear-gradient(100deg, #000000 0%, $color-sample_1 100%),
+    -webkit-linear-gradient(90deg, #000000 0%, $color-sample_1 100%);
+  background-image: -moz-linear-gradient(100deg, #000000 0%, $color-sample_1 100%),
+    -moz-linear-gradient(90deg, #000000 0%, $color-sample_1 100%);
+  background-image: -o-linear-gradient(100deg, #000000 0%, $color-sample_1 100%),
+    -o-linear-gradient(90deg, #000000 0%, $color-sample_1 100%);
+  background-image: linear-gradient(100deg, #000000 0%, $color-sample_1 100%),
+    linear-gradient(90deg, #000000 0%, $color-sample_1 100%);
+}
+
+.track-beats .track-beats-1 label {
+  background-image: -webkit-linear-gradient(90deg, #000000 0%, $color-sample_1 100%),
+    -webkit-linear-gradient(90deg, #000000 0%, $color-sample_1 100%);
+  background-image: -moz-linear-gradient(90deg, #000000 0%, $color-sample_1 100%),
+    -moz-linear-gradient(90deg, #000000 0%, $color-sample_1 100%);
+  background-image: -o-linear-gradient(90deg, #000000 0%, $color-sample_1 100%),
+    -o-linear-gradient(90deg, #000000 0%, $color-sample_1 100%);
+  background-image: linear-gradient(90deg, #000000 0%, $color-sample_1 100%),
+    linear-gradient(90deg, #000000 0%, $color-sample_1 100%);
+}
+
+.track-beats .track-beats-2 label {
+  background-image: -webkit-linear-gradient(90deg, #000000 0%, $color-sample_2 100%),
+    -webkit-linear-gradient(90deg, #000000 0%, $color-sample_2 100%);
+  background-image: -moz-linear-gradient(90deg, #000000 0%, $color-sample_2 100%),
+    -moz-linear-gradient(90deg, #000000 0%, $color-sample_2 100%);
+  background-image: -o-linear-gradient(90deg, #000000 0%, $color-sample_2 100%),
+    -o-linear-gradient(90deg, #000000 0%, $color-sample_2 100%);
+  background-image: linear-gradient(90deg, #000000 0%, $color-sample_2 100%),
+    linear-gradient(90deg, #000000 0%, $color-sample_2 100%);
+}
+
+.track-beats .track-beats-3 label {
+  background-image: -webkit-linear-gradient(90deg, #000000 0%, $color-sample_3 100%),
+    -webkit-linear-gradient(90deg, #000000 0%, $color-sample_3 100%);
+  background-image: -moz-linear-gradient(90deg, #000000 0%, $color-sample_3 100%),
+    -moz-linear-gradient(90deg, #000000 0%, $color-sample_3 100%);
+  background-image: -o-linear-gradient(90deg, #000000 0%, $color-sample_3 100%),
+    -o-linear-gradient(90deg, #000000 0%, $color-sample_3 100%);
+  background-image: linear-gradient(90deg, #000000 0%, $color-sample_3 100%),
+    linear-gradient(90deg, #000000 0%, $color-sample_3 100%);
+}
+
+.track-beats .track-beats-4 label {
+  background-image: -webkit-linear-gradient(90deg, #000000 0%, $color-sample_4 100%),
+    -webkit-linear-gradient(90deg, #000000 0%, $color-sample_4 100%);
+  background-image: -moz-linear-gradient(90deg, #000000 0%, $color-sample_4 100%),
+    -moz-linear-gradient(90deg, #000000 0%, $color-sample_4 100%);
+  background-image: -o-linear-gradient(90deg, #000000 0%, $color-sample_4 100%),
+    -o-linear-gradient(90deg, #000000 0%, $color-sample_4 100%);
+  background-image: linear-gradient(90deg, #000000 0%, $color-sample_4 100%),
+    linear-gradient(90deg, #000000 0%, $color-sample_4 100%);
+}
+
+.track-beats label {
+  position: relative;
+  left: -0.5rem;
+  float: left;
+  border-radius: 2px;
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.025);
+  border-right: 0px solid #16181c;
+
+  width: 2rem;
+  height: 2rem;
+  /* background: transparent;
+    border-radius: 2px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-position: 0 0, 0 100%;
+    background-repeat: no-repeat;
+    background-image: -webkit-linear-gradient(90deg, #000000 0%,$color-sample 100%), -webkit-linear-gradient(90deg, #000000 0%, $color-sample 100%);
+    background-image: -moz-linear-gradient(90deg, #000000 0%, $color-sample 100%), -moz-linear-gradient(90deg, #000000 0%, $color-sample 100%);
+    background-image: -o-linear-gradient(90deg, #000000 0%, $color-sample 100%), -o-linear-gradient(90deg, #000000 0%, $color-sample 100%);
+    background-image: linear-gradient(90deg, #000000 0%, $color-sample 100%), linear-gradient(90deg, #000000 0%, $color-sample 100%); */
+}
+
+.track-beats-div {
+  top: 15%;
+  left: 15%;
+  width: 70%;
+  height: 70%;
+  z-index: 1;
+  position: absolute;
+  border-radius: 2px;
+  background: #101114;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, 0.035), inset 0px -20px 20px -20px rgba(0, 0, 0, 0.5), inset 0px 20px 20px -20px rgba(255, 255, 255, 0.05);
+}
+
+.track-beats-div-checked {
+  top: 15%;
+  left: 15%;
+  width: 70%;
+  height: 70%;
+  z-index: 1;
+  position: absolute;
+  border-radius: 2px;
+  background: red;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, 0.035), inset 0px -20px 20px -20px rgba(0, 0, 0, 0.5), inset 0px 20px 20px -20px rgba(255, 255, 255, 0.05);
+}
+
+.track-beats :checked + label {
+  /*box-shadow: 0 0 0 0.2rem #222;*/
+
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  /* border-left: 0.25rem solid $color-sample;
+    border-right:  0.25rem solid $color-sample;
+    border-top: 0.25rem solid $color-sample;
+    border-bottom:  0.25rem solid $color-sample;*/
+  border-radius: 2px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-position: 0 0, 0 100%;
+  background-repeat: no-repeat;
+  /*-webkit-background-size: 100% 0;
+    -moz-background-size: 100% 0;
+    background-size: 100% 0;*/
+  background-image: -webkit-linear-gradient(90deg, #000000 0%, $color-sample-selected 100%),
+    -webkit-linear-gradient(90deg, #000000 0%, $color-sample-selected 100%);
+  background-image: -moz-linear-gradient(90deg, #000000 0%, $color-sample-selected 100%),
+    -moz-linear-gradient(90deg, #000000 0%, $color-sample-selected 100%);
+  background-image: -o-linear-gradient(90deg, #000000 0%, $color-sample-selected 100%),
+    -o-linear-gradient(90deg, #000000 0%, $color-sample-selected 100%);
+  background-image: linear-gradient(90deg, #000000 0%, $color-sample-selected 100%),
+    linear-gradient(90deg, #000000 0%, $color-sample-selected 100%);
+  position: relative;
+  left: -0.5rem;
+}
+
+.track-addRemove,
+.track-muteSettings,
+.track-beats > div {
+  display: flex;
+  align-items: center;
+}
+
+.track-beats > div {
+  background-image: url(./assets/images/line.svg);
+  background-repeat: repeat-x;
+  background-position: center;
+  background-size: auto 0.25rem;
+}
+
+.track-beats > div:last-child {
+  position: relative;
+}
+
+.track-beats > div:last-child::after {
+  content: '';
+  display: inline-block;
+  width: 0.25rem;
+  height: 1rem;
+  background: #222;
+  border-radius: 0.125rem;
+  position: absolute;
+  right: 0;
+  top: 0.5rem;
+  bottom: 0.5rem;
+  display: none;
+}
+
+/* track settings */
+
+.track-settings {
+  padding: 15px;
+  border-bottom: 0 solid;
+  overflow: hidden;
+}
+
+.setting {
+  display: flex;
+  align-items: center;
+}
+
+.setting + .setting {
+  margin-top: 2rem;
+}
+
+.setting > * {
+  flex: 1 0 auto;
+}
+
+.setting > :last-child {
+  flex: 3;
+  display: flex;
+  align-items: center;
+}
+
+.setting > :first-child {
+  flex: 1;
+  line-height: 1.125;
+  margin-right: 0.5rem;
+}
+
+.setting span[id] {
+  display: none;
+}
+
+/* bpm and play row */
+
+.bpm-and-play {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+/* bpm */
+
+.bpm {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 60%;
+}
+
+.bpm-slider {
+  margin-right: 0.5rem;
+  width: 80%;
+}
+
+.bpm label {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+
+/* play/stop */
+.play-stop {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.play-stop button {
+  width: 3rem;
+  height: 3rem;
+  margin-left: 0.5rem;
+}
+
+.play-stop button[aria-pressed='false'] .pause-icon {
+  display: none;
+}
+
+.play-stop button[aria-pressed='true'] .play-icon {
+  display: none;
+}
+
+/* reset and link */
+
+.link-section {
+  text-align: center;
+}
+
+.reset {
+  border-radius: 0.25rem;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 0.25rem 5rem;
+  font-weight: normal;
+  margin: 0.5rem;
+  letter-spacing: 1px;
+}
+
+/* link input */
+
+[type='text'] {
+  padding: 0.25rem;
+  width: 80%;
+  border: 1px solid;
+  font-family: monospace;
+}
+
+/* animations */
+
+@keyframes pulse {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+label[id] {
+  will-change: transform;
+}
+
+.pulse-anim {
+  animation: pulse 0.1s 1 ease-in;
+}
+
+.slide-enter-active,
+.slide-leave-active {
+  transition: opacity 1s;
+}
+
+.slide-leave-active {
+  transition: opacity 0.25s;
+}
+
+.slide-enter,
+.slide-leave-active {
+  opacity: 0;
+}
+
+.open-settings {
+  transition: transform 0.5s ease-out;
+}
+
+.open-settings[aria-expanded='true'] {
+  transform: rotate(45deg);
+}
+
+/* stats and footer */
+
+.stats {
+  text-align: center;
+  margin-top: 2.25rem;
+}
+
+footer {
+  text-align: center;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 45rem;
+}
+
+footer::before {
+  content: '——————';
+  letter-spacing: -0.25rem;
+}
+
+/* smaller viewports */
+
+@media (max-width: 750px) {
+  .central-col {
+    margin: 1em;
+    padding: 0;
+  }
+}
+
+/* portrait warning */
+
+.portrait-warning {
+  display: none;
+}
+
+.portrait-warning svg {
+  margin: 0.5rem 0;
+}
+
+@media (orientation: portrait) {
+  .portrait-warning {
+    display: flex;
+    background: #ddd;
+    padding: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .portrait-warning svg {
+    width: 30vw;
+    height: auto;
+  }
+}
+
+/* offline ready confirmation */
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#offline-confirm p {
+  background: #222;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  animation: fade 6s ease-in;
+}

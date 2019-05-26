@@ -1,0 +1,225 @@
+{
+  "translations": {
+    "en": {
+      "title": "Prime Machine",
+      "social": "Social",
+      "open": "open",
+      "close": "close",
+      "search-placeholder": "Search...",
+      "search-no-results": "No results for",
+      "welcome-placeholder": "Prime Machine - Document Repository - No data available!",
+      "title-not-set": "",
+      "content-not-set": "No content available",
+      "show-more": "Show more",
+      "show-less": "Show less",
+      "required": "Required",
+      "optional": "Optional",
+      "navigation": {
+        "title": "Menu"
+      },
+      "message": {
+        "title1": "Message Type",
+        "title2": "Content",
+        "preview": "Preview"
+      },
+      "notification": {
+        "client": "GLAMOUR",
+        "days": "5 days ago"
+      },
+      "search": {
+        "title": "Users",
+        "placeholder": "Search",
+        "alert": "No search results for",
+        "of": "of",
+        "nofiles": "No files found",
+        "delete": "Delete",
+        "add": "Add"
+      },
+      "paging": {
+        "of": "of"
+      },
+      "feedback": {
+        "modal": {
+          "title": "Feedback",
+          "text": "...",
+          "citation": "Be careful ;)",
+          "send": "Send"
+        }
+      },
+      "footer": {
+        "tcs": "Terms & Conditions",
+        "privacy": "Privacy Policy",
+        "copyright": "Dreaming Lab 2018."
+      },
+      "button": {
+        "submit": "submit",
+        "full-text-search": "Fulltext search",
+        "cancel": "cancel",
+        "save": "Save",
+        "sendreset": "Send a reset link",
+        "continue-to": "Continue to",
+        "back": "back"
+      },
+      "hint": {
+        "no-articles-found-header": "No data available",
+        "no-articles-found": "No info available. Please check back later."
+      },
+      "email": {
+        "from": "DreamingLab",
+        "subject": {
+          "new-order": "Subject"
+        },
+        "content": {
+          "salutation": "",
+          "name": "Name",
+          "address": "Address",
+          "email": "eMail",
+          "phone": "Phone",
+          "footer": "Kindest regards,\nPrime Machine"
+        }
+      },
+      "login": {
+        "pageTitle": "Login",
+        "title": "Log in",
+        "paragraphContact": "If you have a Prime Machine account already you can log in below. Otherwise, %contact us% to get started.",
+        "contact": "contact us",
+        "paragraphReset": "Forgotten your password?",
+        "resetLinktext": "Click here",
+        "resetEnd": "to reset."
+      },
+      "form": {
+        "sections": {
+          "details": "Your details",
+          "password": "Change password",
+          "settings": "Notification settings"
+        },
+        "title": {
+          "label": "Title",
+          "placeholder": "Title (Optional)",
+          "error": "Please enter the title"
+        },
+        "body": {
+          "label": "Body",
+          "placeholder": "",
+          "error": "Please enter the body"
+        },
+        "payload": {
+          "label": "Payload",
+          "placeholder": "",
+          "error": "Please enter the payload"
+        },
+        "name": {
+          "label": "Name",
+          "placeholder": "Your name",
+          "error": "Please enter your full name"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "Your email",
+          "error": "Please enter a valid email"
+        },
+        "phone": {
+          "label": "Telephone",
+          "placeholder": "Your telephone",
+          "error": "Please enter a valid number"
+        },
+        "passwordLogin": {
+          "label": "Password",
+          "placeholder": "Your password",
+          "error": "Please enter password"
+        },
+        "passwordCurrent": {
+          "label": "Current password",
+          "placeholder": "Type your current password",
+          "error": "Please enter password"
+        },
+        "passwordNew": {
+          "label": "New password",
+          "placeholder": "Enter a new password",
+          "error": "Please enter password"
+        },
+        "passwordRepeat": {
+          "label": "Repeat new password",
+          "placeholder": "Confirm your new password",
+          "error": "Please enter password"
+        },
+        "notifications": {
+          "email": "Receive email notifications about your subscription?",
+          "text": "Receive text notifications about your subscription?"
+        },
+        "button": {
+          "login": {
+            "title": "Log in",
+            "error": "Error"
+          },
+          "sendreset": {
+            "title": "Send a reset link",
+            "error": "Error"
+          },
+          "save": {
+            "title": "Save",
+            "error": "Error"
+          },
+          "savelogin": {
+            "title": "Save & log in",
+            "error": "Error"
+          },
+          "cancel": {
+            "title": "Cancel Changes",
+            "error": "Error"
+          },
+          "toggle": {
+            "no": "No",
+            "yes": "Yes"
+          }
+        },
+        "confirmation": {
+          "text": "Your data was successfully storted.",
+          "link": "",
+          "linktext": "Return to contact form"
+        },
+        "error": {
+          "userdataWrong": "Userdata are incorrect. Please try again.",
+          "required": "This field is required.",
+          "emailWrong": "Please enter a valid email address.",
+          "passwordLength": "Password needs to be longer then 8 characters.",
+          "passwordIdentical": "Passwords must be identical.",
+          "nameLength": "Name needs to be longer then 8 characters.",
+          "emailLength": "Email needs to be longer then 8 characters.",
+          "phoneLength": "Phone nmuber needs to be longer then 5 characters.",
+          "phoneWrong": "Please enter a valid phone number."
+        }
+      },
+      "sidebar": {
+        "button": {
+          "logout": {
+            "title": "Log out",
+            "error": "Error"
+          }
+        }
+      },
+      "dbswitch": {
+        "info": "Select database",
+        "buttonDev": "develop",
+        "buttonProd": "production"
+      },
+      "e404": {
+        "pageTitle": "404 - Page not found",
+        "title": "Sorry, this page doesn’t exist",
+        "sections": {
+          "hero": {
+            "title": "Sorry, this page doesn’t exist",
+            "button": "Go home"
+          }
+        }
+      },
+      "cookiepoliciy": {
+        "message": "For optimal navigation, this site uses cookies. By continuing your browsing you agree with our use of cookies.",
+        "dismiss": "Ok, I agree",
+        "learnMore": "More info",
+        "header": "Data Prtotection",
+        "cookieinfo": {}
+      }
+    }
+  }
+}

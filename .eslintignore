@@ -1,0 +1,12 @@
+build/*.js
+config/*.js
+
+src/assets/**
+src/config/**
+src/css/**
+src/data/**
+src/sass/**
+
+static/**
+
+.vscode

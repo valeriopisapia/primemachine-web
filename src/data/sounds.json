@@ -1,0 +1,936 @@
+{
+	"patterns": [{
+			"id": "0",
+			"name": "Deep House Kit",
+			"bpm": 120,
+			"icon": "fas fa-headphones",
+			"patternUrl": "deep_house1",
+			"sounds": [{
+					"name": "Kick",
+					"url": "d1_kick.wav",
+					"buffer": null,
+					"length": 16,
+					"current": 1,
+					"active": [
+						1,
+						5,
+						9,
+						13
+					],
+					"probability": {
+						"chance": 1,
+						"in": 1
+					},
+					"probable": true,
+					"fluctuationLevel": 0,
+					"overrides": [],
+					"volume": 100,
+					"muted": false,
+					"expanded": false
+				},
+				{
+					"name": "Clap",
+					"url": "d1_clap.wav",
+					"buffer": null,
+					"length": 16,
+					"current": 1,
+					"active": [
+						5,
+						13
+					],
+					"probability": {
+						"chance": 1,
+						"in": 1
+					},
+					"probable": true,
+					"fluctuationLevel": 0,
+					"overrides": [],
+					"volume": 100,
+					"muted": false,
+					"expanded": false
+				},
+				{
+					"name": "Hi-Hats",
+					"url": "d1_hihats.wav",
+					"buffer": null,
+					"length": 16,
+					"current": 1,
+					"active": [
+						3,
+						7,
+						11,
+						15
+					],
+					"probability": {
+						"chance": 1,
+						"in": 1
+					},
+					"probable": true,
+					"fluctuationLevel": 0,
+					"overrides": [],
+					"volume": 100,
+					"muted": false,
+					"expanded": false
+				},
+				{
+					"name": "Snare",
+					"url": "d1_snare.wav",
+					"buffer": null,
+					"length": 16,
+					"current": 1,
+					"active": [
+						8,
+						12,
+						15
+					],
+					"probability": {
+						"chance": 1,
+						"in": 1
+					},
+					"probable": true,
+					"fluctuationLevel": 0,
+					"overrides": [],
+					"volume": 100,
+					"muted": false,
+					"expanded": false
+				},
+				{
+					"name": "Lead",
+					"url": "d1_lead.wav",
+					"buffer": null,
+					"length": 16,
+					"current": 1,
+					"active": [
+						13,
+						6,
+						8,
+						11,
+						14,
+						15
+					],
+					"probability": {
+						"chance": 1,
+						"in": 1
+					},
+					"probable": true,
+					"fluctuationLevel": 0,
+					"overrides": [],
+					"volume": 100,
+					"muted": false,
+					"expanded": false
+				},
+				{
+					"name": "Brass1",
+					"url": "d1_brass1.wav",
+					"buffer": null,
+					"length": 16,
+					"current": 1,
+					"active": [
+						4,
+						7
+					],
+					"probability": {
+						"chance": 1,
+						"in": 1
+					},
+					"probable": true,
+					"fluctuationLevel": 0,
+					"overrides": [],
+					"volume": 100,
+					"muted": false,
+					"expanded": false
+				},
+				{
+					"name": "Brass2",
+					"url": "d1_brass2.wav",
+					"buffer": null,
+					"length": 16,
+					"current": 1,
+					"active": [
+						12,
+						15
+					],
+					"probability": {
+						"chance": 1,
+						"in": 1
+					},
+					"probable": true,
+					"fluctuationLevel": 0,
+					"overrides": [],
+					"volume": 100,
+					"muted": false,
+					"expanded": false
+				},
+				{
+					"name": "Pluck1",
+					"url": "d1_pluck1.wav",
+					"buffer": null,
+					"length": 16,
+					"current": 1,
+					"active": [
+						10
+					],
+					"probability": {
+						"chance": 1,
+						"in": 1
+					},
+					"probable": true,
+					"fluctuationLevel": 0,
+					"overrides": [],
+					"volume": 100,
+					"muted": false,
+					"expanded": false
+				},
+				{
+					"name": "Pluck2",
+					"url": "d1_pluck2.wav",
+					"buffer": null,
+					"length": 16,
+					"current": 1,
+					"active": [
+						11
+					],
+					"probability": {
+						"chance": 1,
+						"in": 1
+					},
+					"probable": true,
+					"fluctuationLevel": 0,
+					"overrides": [],
+					"volume": 100,
+					"muted": false,
+					"expanded": false
+				},
+				{
+					"name": "Vox",
+					"url": "d1_vox.wav",
+					"buffer": null,
+					"length": 16,
+					"current": 1,
+					"active": [
+						2
+					],
+					"probability": {
+						"chance": 1,
+						"in": 1
+					},
+					"probable": true,
+					"fluctuationLevel": 0,
+					"overrides": [],
+					"volume": 100,
+					"muted": false,
+					"expanded": false
+				}
+			]
+		},
+		{
+			"id": "1",
+			"name": "Future Bass Kit",
+			"bpm": 135,
+			"icon": "fas fa-headphones",
+			"patternUrl": "future_bass1",
+			"sounds": [{
+					"name": "Kick",
+					"url": "f1_kick.wav",
+					"buffer": null,
+					"length": 16,
+					"current": 1,
+					"active": [
+						1,
+						7,
+						11
+					],
+					"probability": {
+						"chance": 1,
+						"in": 1
+					},
+					"probable": true,
+					"fluctuationLevel": 0,
+					"overrides": [],
+					"volume": 100,
+					"muted": false,
+					"expanded": false
+				},
+				{
+					"name": "Snap",
+					"url": "f1_snap.wav",
+					"buffer": null,
+					"length": 16,
+					"current": 1,
+					"active": [
+						9
+					],
+					"probability": {
+						"chance": 1,
+						"in": 1
+					},
+					"probable": true,
+					"fluctuationLevel": 0,
+					"overrides": [],
+					"volume": 100,
+					"muted": false,
+					"expanded": false
+				},
+				{
+					"name": "Hi-Hats",
+					"url": "f1_Hi_hat.wav",
+					"buffer": null,
+					"length": 16,
+					"current": 1,
+					"active": [
+						3,
+						7,
+						10,
+						13,
+						15,
+						16
+					],
+					"probability": {
+						"chance": 1,
+						"in": 1
+					},
+					"probable": true,
+					"fluctuationLevel": 0,
+					"overrides": [],
+					"volume": 100,
+					"muted": false,
+					"expanded": false
+				},
+				{
+					"name": "Synth1",
+					"url": "f1_synth1.wav",
+					"buffer": null,
+					"length": 16,
+					"current": 1,
+					"active": [
+						1,
+						6
+					],
+					"probability": {
+						"chance": 1,
+						"in": 1
+					},
+					"probable": true,
+					"fluctuationLevel": 0,
+					"overrides": [],
+					"volume": 100,
+					"muted": false,
+					"expanded": false
+				},
+				{
+					"name": "Synth2",
+					"url": "f1_synth2.wav",
+					"buffer": null,
+					"length": 16,
+					"current": 1,
+					"active": [
+						11,
+						14
+					],
+					"probability": {
+						"chance": 1,
+						"in": 1
+					},
+					"probable": true,
+					"fluctuationLevel": 0,
+					"overrides": [],
+					"volume": 100,
+					"muted": false,
+					"expanded": false
+				},
+				{
+					"name": "Bass1",
+					"url": "f1_bass1.wav",
+					"buffer": null,
+					"length": 16,
+					"current": 1,
+					"active": [
+						1
+					],
+					"probability": {
+						"chance": 1,
+						"in": 1
+					},
+					"probable": true,
+					"fluctuationLevel": 0,
+					"overrides": [],
+					"volume": 100,
+					"muted": false,
+					"expanded": false
+				},
+				{
+					"name": "Bass2",
+					"url": "f1_bass2.wav",
+					"buffer": null,
+					"length": 16,
+					"current": 1,
+					"active": [
+						11
+					],
+					"probability": {
+						"chance": 1,
+						"in": 1
+					},
+					"probable": true,
+					"fluctuationLevel": 0,
+					"overrides": [],
+					"volume": 100,
+					"muted": false,
+					"expanded": false
+				},
+				{
+					"name": "Pluck1",
+					"url": "f1_pluck1.wav",
+					"buffer": null,
+					"length": 16,
+					"current": 1,
+					"active": [
+						9,
+						11,
+						13
+					],
+					"probability": {
+						"chance": 1,
+						"in": 1
+					},
+					"probable": true,
+					"fluctuationLevel": 0,
+					"overrides": [],
+					"volume": 100,
+					"muted": false,
+					"expanded": false
+				},
+				{
+					"name": "Pluck2",
+					"url": "f1_pluck2.wav",
+					"buffer": null,
+					"length": 16,
+					"current": 1,
+					"active": [
+						5
+					],
+					"probability": {
+						"chance": 1,
+						"in": 1
+					},
+					"probable": true,
+					"fluctuationLevel": 0,
+					"overrides": [],
+					"volume": 100,
+					"muted": false,
+					"expanded": false
+				},
+				{
+					"name": "Pluck3",
+					"url": "f1_pluck3.wav",
+					"buffer": null,
+					"length": 16,
+					"current": 1,
+					"active": [
+						7,
+						15
+					],
+					"probability": {
+						"chance": 1,
+						"in": 1
+					},
+					"probable": true,
+					"fluctuationLevel": 0,
+					"overrides": [],
+					"volume": 100,
+					"muted": false,
+					"expanded": false
+				},
+				{
+					"name": "Pluck4",
+					"url": "f1_pluck4.wav",
+					"buffer": null,
+					"length": 16,
+					"current": 1,
+					"active": [
+						3
+					],
+					"probability": {
+						"chance": 1,
+						"in": 1
+					},
+					"probable": true,
+					"fluctuationLevel": 0,
+					"overrides": [],
+					"volume": 100,
+					"muted": false,
+					"expanded": false
+				}
+			]
+		},
+		{
+			"id": "2",
+			"name": "Trap Kit",
+			"bpm": 160,
+			"icon": "fas fa-headphones",
+			"patternUrl": "trap_kit",
+			"sounds": [{
+					"name": "Kick",
+					"url": "f2_kick.wav",
+					"buffer": null,
+					"length": 16,
+					"current": 1,
+					"active": [
+						1,
+						7,
+						13
+					],
+					"probability": {
+						"chance": 1,
+						"in": 1
+					},
+					"probable": true,
+					"fluctuationLevel": 0,
+					"overrides": [],
+					"volume": 100,
+					"muted": false,
+					"expanded": false
+				},
+				{
+					"name": "Clap",
+					"url": "f2_clap.wav",
+					"buffer": null,
+					"length": 16,
+					"current": 1,
+					"active": [
+						9
+					],
+					"probability": {
+						"chance": 1,
+						"in": 1
+					},
+					"probable": true,
+					"fluctuationLevel": 0,
+					"overrides": [],
+					"volume": 100,
+					"muted": false,
+					"expanded": false
+				},
+				{
+					"name": "Hi-Hat",
+					"url": "f2_hi_hat.wav",
+					"buffer": null,
+					"length": 16,
+					"current": 1,
+					"active": [
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16
+					],
+					"probability": {
+						"chance": 1,
+						"in": 1
+					},
+					"probable": true,
+					"fluctuationLevel": 0,
+					"overrides": [],
+					"volume": 100,
+					"muted": false,
+					"expanded": false
+				},
+				{
+					"name": "Ride",
+					"url": "f2_ride.wav",
+					"buffer": null,
+					"length": 16,
+					"current": 1,
+					"active": [
+						1,
+						3,
+						5,
+						7,
+						9,
+						11,
+						13,
+						15
+					],
+					"probability": {
+						"chance": 1,
+						"in": 1
+					},
+					"probable": true,
+					"fluctuationLevel": 0,
+					"overrides": [],
+					"volume": 100,
+					"muted": false,
+					"expanded": false
+				},
+				{
+					"name": "Lead1",
+					"url": "f2_synth1.wav",
+					"buffer": null,
+					"length": 16,
+					"current": 1,
+					"active": [
+						1,
+						3,
+						7
+					],
+					"probability": {
+						"chance": 1,
+						"in": 1
+					},
+					"probable": true,
+					"fluctuationLevel": 0,
+					"overrides": [],
+					"volume": 100,
+					"muted": false,
+					"expanded": false
+				},
+				{
+					"name": "Lead2",
+					"url": "f2_synth2.wav",
+					"buffer": null,
+					"length": 16,
+					"current": 1,
+					"active": [
+						5
+					],
+					"probability": {
+						"chance": 1,
+						"in": 1
+					},
+					"probable": true,
+					"fluctuationLevel": 0,
+					"overrides": [],
+					"volume": 100,
+					"muted": false,
+					"expanded": false
+				},
+				{
+					"name": "Dub",
+					"url": "f2_dub.wav",
+					"buffer": null,
+					"length": 16,
+					"current": 1,
+					"active": [
+						11
+					],
+					"probability": {
+						"chance": 1,
+						"in": 1
+					},
+					"probable": true,
+					"fluctuationLevel": 0,
+					"overrides": [],
+					"volume": 100,
+					"muted": false,
+					"expanded": false
+				},
+				{
+					"name": "Hard-short",
+					"url": "f2_bass_short.wav",
+					"buffer": null,
+					"length": 16,
+					"current": 1,
+					"active": [
+						4,
+						10
+					],
+					"probability": {
+						"chance": 1,
+						"in": 1
+					},
+					"probable": true,
+					"fluctuationLevel": 0,
+					"overrides": [],
+					"volume": 100,
+					"muted": false,
+					"expanded": false
+				},
+				{
+					"name": "Hard-long",
+					"url": "f2_bass_long.wav",
+					"buffer": null,
+					"length": 16,
+					"current": 1,
+					"active": [
+						13
+					],
+					"probability": {
+						"chance": 1,
+						"in": 1
+					},
+					"probable": true,
+					"fluctuationLevel": 0,
+					"overrides": [],
+					"volume": 100,
+					"muted": false,
+					"expanded": false
+				},
+				{
+					"name": "Vox",
+					"url": "f2_vox.wav",
+					"buffer": null,
+					"length": 16,
+					"current": 1,
+					"active": [
+						15
+					],
+					"probability": {
+						"chance": 1,
+						"in": 1
+					},
+					"probable": true,
+					"fluctuationLevel": 0,
+					"overrides": [],
+					"volume": 100,
+					"muted": false,
+					"expanded": false
+				}
+			]
+		},
+		{
+			"id": "3",
+			"name": "Future (Only Lead)",
+			"bpm": 126,
+			"icon": "fas fa-headphones",
+			"patternUrl": "future_only_lead",
+			"sounds": [{
+					"name": "Lead C",
+					"url": "fp1_c.wav",
+					"buffer": null,
+					"length": 16,
+					"current": 1,
+					"active": [],
+					"probability": {
+						"chance": 1,
+						"in": 1
+					},
+					"probable": true,
+					"fluctuationLevel": 0,
+					"overrides": [],
+					"volume": 100,
+					"muted": false,
+					"expanded": false
+				},
+				{
+					"name": "Lead Cmaj",
+					"url": "fp1_cmaj.wav",
+					"buffer": null,
+					"length": 16,
+					"current": 1,
+					"active": [
+						10
+					],
+					"probability": {
+						"chance": 1,
+						"in": 1
+					},
+					"probable": true,
+					"fluctuationLevel": 0,
+					"overrides": [],
+					"volume": 100,
+					"muted": false,
+					"expanded": false
+				},
+				{
+					"name": "Lead D",
+					"url": "fp1_d.wav",
+					"buffer": null,
+					"length": 16,
+					"current": 1,
+					"active": [],
+					"probability": {
+						"chance": 1,
+						"in": 1
+					},
+					"probable": true,
+					"fluctuationLevel": 0,
+					"overrides": [],
+					"volume": 100,
+					"muted": false,
+					"expanded": false
+				},
+				{
+					"name": "Lead Dmaj",
+					"url": "fp1_dmaj.wav",
+					"buffer": null,
+					"length": 16,
+					"current": 1,
+					"active": [
+						7,
+						13,
+						16
+					],
+					"probability": {
+						"chance": 1,
+						"in": 1
+					},
+					"probable": true,
+					"fluctuationLevel": 0,
+					"overrides": [],
+					"volume": 100,
+					"muted": false,
+					"expanded": false
+				},
+				{
+					"name": "Lead E",
+					"url": "fp1_e.wav",
+					"buffer": null,
+					"length": 16,
+					"current": 1,
+					"active": [],
+					"probability": {
+						"chance": 1,
+						"in": 1
+					},
+					"probable": true,
+					"fluctuationLevel": 0,
+					"overrides": [],
+					"volume": 100,
+					"muted": false,
+					"expanded": false
+				},
+				{
+					"name": "Lead F",
+					"url": "fp1_f.wav",
+					"buffer": null,
+					"length": 16,
+					"current": 1,
+					"active": [],
+					"probability": {
+						"chance": 1,
+						"in": 1
+					},
+					"probable": true,
+					"fluctuationLevel": 0,
+					"overrides": [],
+					"volume": 100,
+					"muted": false,
+					"expanded": false
+				},
+				{
+					"name": "Lead Fmaj",
+					"url": "fp1_fmaj.wav",
+					"buffer": null,
+					"length": 16,
+					"current": 1,
+					"active": [
+						4
+					],
+					"probability": {
+						"chance": 1,
+						"in": 1
+					},
+					"probable": true,
+					"fluctuationLevel": 0,
+					"overrides": [],
+					"volume": 100,
+					"muted": false,
+					"expanded": false
+				},
+				{
+					"name": "Lead G",
+					"url": "fp1_g.wav",
+					"buffer": null,
+					"length": 16,
+					"current": 1,
+					"active": [],
+					"probability": {
+						"chance": 1,
+						"in": 1
+					},
+					"probable": true,
+					"fluctuationLevel": 0,
+					"overrides": [],
+					"volume": 100,
+					"muted": false,
+					"expanded": false
+				},
+				{
+					"name": "Lead Gmaj",
+					"url": "fp1_gmaj.wav",
+					"buffer": null,
+					"length": 16,
+					"current": 1,
+					"active": [
+						1
+					],
+					"probability": {
+						"chance": 1,
+						"in": 1
+					},
+					"probable": true,
+					"fluctuationLevel": 0,
+					"overrides": [],
+					"volume": 100,
+					"muted": false,
+					"expanded": false
+				},
+				{
+					"name": "Lead A",
+					"url": "fp1_a.wav",
+					"buffer": null,
+					"length": 16,
+					"current": 1,
+					"active": [],
+					"probability": {
+						"chance": 1,
+						"in": 1
+					},
+					"probable": true,
+					"fluctuationLevel": 0,
+					"overrides": [],
+					"volume": 100,
+					"muted": false,
+					"expanded": false
+				},
+				{
+					"name": "Lead Amaj",
+					"url": "fp1_amaj.wav",
+					"buffer": null,
+					"length": 16,
+					"current": 1,
+					"active": [],
+					"probability": {
+						"chance": 1,
+						"in": 1
+					},
+					"probable": true,
+					"fluctuationLevel": 0,
+					"overrides": [],
+					"volume": 100,
+					"muted": false,
+					"expanded": false
+				},
+				{
+					"name": "Lead B",
+					"url": "fp1_b.wav",
+					"buffer": null,
+					"length": 16,
+					"current": 1,
+					"active": [],
+					"probability": {
+						"chance": 1,
+						"in": 1
+					},
+					"probable": true,
+					"fluctuationLevel": 0,
+					"overrides": [],
+					"volume": 100,
+					"muted": false,
+					"expanded": false
+				}
+			]
+		}
+	]
+}

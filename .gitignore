@@ -1,0 +1,25 @@
+# Specifies intentionally untracked files to ignore when using Git
+
+.DS_Store
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+_designs
+_examples
+_old
+_temp
+_tools
+_work
+
+default
+dist
+node_modules
+upload
+
+# Editor directories and files
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln

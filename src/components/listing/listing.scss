@@ -1,0 +1,260 @@
+.sw-listing {
+
+  &__fixed {
+
+    tbody {
+      display: block;
+      overflow: auto;
+      height: calc(93vh - 228px);
+
+      @include vp-md { // SMALL DESKTOP
+        height: calc(98vh - 228px);
+      }
+    }
+
+    thead,
+    tbody tr {
+      display: table;
+      width: 100%;
+      table-layout: fixed; // even columns width , fix width of table too
+    }
+
+    &--center {
+
+      tbody {
+        display: block;
+        overflow: auto;
+        // background-color: tomato;
+        height: 77vh; //calc(93vh - 228px);
+
+        // @include vp-md { // SMALL DESKTOP
+        //   height: calc(98vh - 228px);
+        // }
+      }
+
+      thead,
+      tbody tr {
+        display: table;
+        width: 100%;
+        table-layout: fixed; // even columns width , fix width of table too
+      }
+    }
+  }
+
+  &__header {
+    &__title {
+      width: 20%;
+    }
+
+    &__schedule {
+      width: 15%;
+    }
+
+    &__active {
+      width: 10%;
+    }
+
+    &__author {
+      width: 15%;
+    }
+    
+    &__messages {
+      width: 10%;
+    }
+    
+    &--right {
+      padding-right: sp(48) !important;
+    }
+  }
+
+  &__item {
+
+    &--left {
+      width: 20%;
+      color: $color-font-blue--light;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    &--middle {
+      width: 40%;
+      padding-right: sp(8) !important;
+    }
+
+    &--right {
+      padding: 0 !important; //sp(14) 0 0 0 !important;
+      margin-left: sp(-10); //sp(5);
+      display: inline-block;
+    }
+  }
+
+  &__icon {
+
+    &--more {
+      font-size: sp(20);
+      color: rgba(0,0,0,.54) !important;
+    }
+  }
+}
+
+.sw-document {
+
+  &__userinfo {
+
+    &--image {
+    }
+
+    &--text {
+    }
+  }
+}
+
+.sw-dropdown {
+
+  &__menu {
+    width: sp(128);
+    padding: 0;
+  }
+}
+
+.sw-button {
+
+  &__user {
+
+    &--add {
+      position: absolute !important;
+      background-color: $color-accent !important;
+      color: $color-font-white !important;
+      bottom: sp(84);
+      right: sp(24);
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__document {
+
+    &--add {
+      position: absolute !important;
+      background-color: $color-accent !important;
+      right: sp(24);
+      bottom: sp(24);
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.sw-title {
+  &__middle {
+    padding: sp(15) sp(15) 0 sp(15);
+  }
+}
+
+// HEADS UP: overwrite the default styles of vuetify
+
+.v-table {
+  th {
+    background-color: $color-content-background--info !important;
+  }
+
+  tr:last-child {
+    border-bottom: sp(1) solid rgba(0,0,0,.12);
+  }
+}
+
+.v-datatable__progress {
+  display: none;
+}
+
+.v-datatable__actions {
+  bottom: 0;
+  border: none !important;
+  background-color: $color-content-background--info !important;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: center;
+
+  &__pagination {
+    white-space: nowrap;
+    margin: 0 sp(0) 0 sp(60);
+
+    @include vp-md { // SMALL DESKTOP
+      margin: 0 sp(12) 0 sp(48);
+    }
+
+    @include vp-lg { // DESKTOP
+      margin: 0 sp(24) 0 sp(32);
+    }
+
+    .v-btn--icon {
+      width: sp(20);
+    }
+  }
+
+  &__select {
+    justify-content: flex-start;
+    margin-right: 0;
+    margin-left: sp(24);
+    width: sp(100);
+
+    @include vp-md { // SMALL DESKTOP
+      margin-left: sp(36);
+      width: sp(120);
+    }
+
+    @include vp-lg { // DESKTOP
+      margin-left: sp(36);
+      width: sp(140);
+    }
+
+    .v-select {
+      margin: sp(13) 0 sp(13) sp(25);
+    }
+  }
+
+  .v-btn:last-of-type {
+    margin-left: 0;
+    margin-right: sp(12);
+
+    @include vp-md { // SMALL DESKTOP
+      margin-left: 0;
+      margin-right: sp(24);
+    }
+
+    @include vp-lg { // DESKTOP
+      margin-left: sp(14);
+    margin-right: initial;
+    }
+  }
+}
+
+.v-input {
+
+  &__slot {
+
+    &:before {
+      height: sp(2) !important;
+    }
+
+    :after {
+      bottom: sp(-2) !important;
+    }
+  }
+}
+
+.application .theme--light.v-table tbody tr:hover:not(.datatable__expand-row), .theme--light .v-table tbody tr:hover:not(.datatable__expand-row) {
+  background: $color-accent--row;
+}
+
+.application .theme--light.v-list, .theme--light .v-list {
+  .v-list__tile {
+    font-size: sp(15);
+  }
+}

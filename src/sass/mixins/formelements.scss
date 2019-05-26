@@ -1,0 +1,17 @@
+@mixin filterFont {
+  font-family: 'PT Sans', sans-serif;
+  font-size: sp(14);
+  line-height: 1.71;
+  text-align: left;
+  color: $color-highlight !important;
+}
+
+@mixin button-light {
+  font-family: 'Cabin', sans-serif;
+  font-size: sp(14);
+  font-weight: bold;
+  line-height: 1.71;
+  letter-spacing: sp(2.3);
+  text-align: center;
+  color: $color-light;
+}

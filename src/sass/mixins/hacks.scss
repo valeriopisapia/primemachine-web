@@ -1,0 +1,40 @@
+/*
+* === Safari 10.1+ (alternate method) ===
+*/
+@mixin safari {
+  @media not all and (min-resolution:.001dpcm)
+  { @supports (-webkit-appearance:none) {
+      @content;
+  }}
+}
+
+//  Example usage:
+//  --------------
+// p {
+//   font-size: 16px;
+//
+//   @include safari {
+//     font-size: 20px;
+//   }
+// }
+
+/*
+* === Microsoft Edge Browser 15+ - @supports method ===
+*/
+//
+@mixin edge15 {
+  @supports (-ms-ime-align:auto)
+  and (-webkit-text-stroke:initial) {
+    @content;
+  }
+}
+
+//  Example usage:
+//  --------------
+// p {
+//   font-size: 16px;
+//
+//   @include edge15 {
+//     font-size: 20px;
+//   }
+// }

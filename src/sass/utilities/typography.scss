@@ -1,0 +1,21 @@
+//
+// Strip unit
+// --------------------------------------------------
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+
+  @return $number;
+}
+
+//
+// Convert sp to rem
+// --------------------------------------------------
+@function sp($sp) {
+  $sp-unitless: strip-unit($sp);
+  @return ($sp-unitless / $base-font-size--unitless) * 1rem;
+}
+// usage:
+// font-size: sp(14);
+

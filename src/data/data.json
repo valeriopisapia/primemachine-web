@@ -1,0 +1,31 @@
+ {
+  "navigation":[
+    {
+      "id": 0,
+      "path": "/",
+      "target": "",
+      "shortname": "logo",
+      "name": "%logo%"
+    }
+  ],
+
+  "menu": [
+    {
+      "id": 0,
+      "path": "/history",
+      "target": "",
+      "shortname": "history",
+      "name": "%history%"
+    }
+  ],
+
+  "footer":[
+    {
+      "id": 0,
+      "path": "/privacy",
+      "target": "",
+      "shortname": "privacy",
+      "name": "%privacy%"
+    }
+  ]
+}
