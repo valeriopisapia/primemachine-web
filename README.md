@@ -5,9 +5,9 @@ Prime Machine is an experimental drum machine built using Vuejs and the web audi
 
 #
 ## Main features
-* Polymeters: lets you create dynamic polymetric drum patterns by adding and removing quarter-beats from individual tracks while the composition is playing (At the moment it's disabled becusa I noticed that it's not really responsive on mobile)
-* Probability: lets you adjust the probability that any individual track's sounds will be played 
-* Overrides: some drums are not typically played at the same time as others within conventional drum beats. By allowing you to prioritize certain sounds over others, you can make sure collisions don't take place as polymetric track relationships permutate over time.
+* Polymeters: lets you create dynamic polymetric drum patterns by adding and removing quarter-beats from individual tracks while the composition is playing (At the moment it's disabled because I noticed that it's not really responsive on mobile).
+* Probability: lets you adjust the probability that any individual track's sounds will be played. 
+* Overrides: in order to avoid the collisions, you can set the prioritize certain sounds over others. 
 # 
 ## Drum Patterns 
 Thanks to [Smokeyloops](https://www.smokeyloops.com) for the awesome drum patterns.
@@ -47,5 +47,6 @@ npm test
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
 ## TODOs List
-* Migration to Vuejs 3.x
-* Improve the performance on mobile
+* Allow to create dynamic polymetric drum patterns by adding and removing quarter-beats from individual tracks while the composition is playing.
+* Migration to Vuejs 3.x.
+* Improve the performance on mobile.
