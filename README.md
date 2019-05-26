@@ -3,6 +3,7 @@ Prime Machine is an experimental drum machine built using Vuejs and the web audi
 * PWA supported: you can saved to your device's homescreen and used offline.
 * Firebase supported: it's configured to work on firebase, if you want to test it on live.
 
+## [Live Demo](https://drum-machine-2c112.firebaseapp.com/pattern/0)
 #
 ## Main features
 * Polymeters: lets you create dynamic polymetric drum patterns by adding and removing quarter-beats from individual tracks while the composition is playing (At the moment it's disabled because I noticed that it's not really responsive on mobile).
